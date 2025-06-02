@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Final - Semillas de Vida | San Jacinto Bolívar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2F855A',
+                        secondary: '#DD6B20',
+                        accent: '#3182CE',
+                        zenu: '#6B46C1',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-pattern {
+            background-image: radial-gradient(#2F855A 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .map-container {
+            height: 400px;
+            background-image: url('https://maps.googleapis.com/maps/api/staticmap?center=San+Jacinto,Bolivar&zoom=12&size=800x400&maptype=terrain&key=YOUR_API_KEY');
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+        <div>
+            <h1 class="text-2xl font-bold text-primary">Portafolio Final de la Práctica Educativa</h1>
+            <p class="text-gray-600">Eje 4 - Educación Sostenible y Ecosofía</p>
+        </div>
+        <div class="flex items-center space-x-4">
+            <!-- Logo Universidad (enlace directo) -->
+          <img src="https://drive.google.com/thumbnail?id=1jJ1OZ6ZQgsfDrm8RMbxoZV94jSy-tOo8" 
+                 alt="Logo Universidad" 
+                 class="h-12">
+     
+            <!-- Logo Comunidad (enlace directo) -->
+            <img src="https://drive.google.com/thumbnail?id=1t30dkN8nBO42DAEyWtAYq9u7JvVQ-zv9" 
+                 alt="Logo Comunidad" 
+                 class="h-12">
+        </div>
+    </div>
+</header>
+
+    <!-- Hero Section -->
+    <section class="hero-pattern py-16">
+        <div class="container mx-auto px-4 text-center">
+         <h1 class="text-4xl md:text-5xl font-bold text-green-500 mb-4 drop-shadow-lg">Semillas de Vida</h1>
+            <h2 class="text-2xl md:text-3xl font-semibold text-white mb-8">Aprendizaje y Ecosofía para la transformación comunitaria en San Jacinto Bolívar</h2>
+            
+            <div class="max-w-4xl mx-auto bg-white bg-opacity-90 rounded-lg shadow-xl p-6">
+                <p class="text-lg text-gray-700 mb-4">"Recuperando saberes ancestrales para sembrar futuro"</p>
+                <div class="flex flex-wrap justify-center gap-4 mt-6">
+                    <div class="flex items-center">
+                        <i class="fas fa-users text-secondary mr-2"></i>
+                        <span>Grupo 33-34</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-calendar-alt text-secondary mr-2"></i>
+                        <span>Mayo 2025</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-map-marker-alt text-secondary mr-2"></i>
+                        <span>San Jacinto Bolívar</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 bg-primary text-white shadow-lg z-10">
+        <div class="container mx-auto px-4">
+            <ul class="flex overflow-x-auto py-4 space-x-8">
+                <li><a href="#contexto" class="hover:text-secondary font-medium">Contexto</a></li>
+                <li><a href="#practica" class="hover:text-secondary font-medium">Práctica Educativa</a></li>
+                <li><a href="#evidencias" class="hover:text-secondary font-medium">Evidencias</a></li>
+                <li><a href="#divulgacion" class="hover:text-secondary font-medium">Divulgación</a></li>
+                <li><a href="#evaluacion" class="hover:text-secondary font-medium">Evaluación</a></li>
+                <li><a href="#reflexion" class="hover:text-secondary font-medium">Reflexión</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- Context Section -->
+        <section id="contexto" class="mb-20">
+            <div class="flex items-center mb-8">
+                <div class="h-1 bg-secondary flex-grow"></div>
+                <h2 class="text-3xl font-bold text-center px-4 text-primary">1. Contextualización General</h2>
+                <div class="h-1 bg-secondary flex-grow"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div>
+                    <h3 class="text-xl font-semibold text-accent mb-4">San Jacinto Bolívar: Territorio de Saberes</h3>
+                    <p class="mb-4 text-gray-700">San Jacinto, reconocido como "Pueblo de la Gaita y las Artesanías" (Radio Nacional, 2021), enfrenta desafíos críticos de desconexión cultural y ambiental:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+                        <li>Pérdida de tradiciones Zenú en nuevas generaciones</li>
+                        <li>Degradación de suelos por prácticas agrícolas no sostenibles</li>
+                        <li>78% de jóvenes reportan bajo conocimiento de medicina tradicional (Encuesta local, 2025)</li>
+                    </ul>
+                    <div class="bg-zenu bg-opacity-10 p-4 rounded-lg border-l-4 border-zenu">
+                        <p class="italic text-gray-700">"Nuestros abuelos sabían leer la tierra como libro, hoy los jóvenes apenas la ven como piso" - Elsa Graciela Pacheco, 68 años</p>
+                    </div>
+                </div>
+                <div class="map-container rounded-lg shadow-lg overflow-hidden">
+    <!-- Mapa de San Jacinto -->
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.715427164713!2d-75.1251239!3d9.8297142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e58cf31a3adda61%3A0x39c551c84f0cfd4c!2sSan%20Jacinto%2C%20Bol%C3%ADvar!5e0!3m2!1ses!2sco!4v1717123456789!5m2!1ses!2sco" 
+        width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+        class="h-full"
+    >
+    </iframe>
+</div>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+                <h3 class="text-xl font-semibold text-accent mb-4">Fundamentos Teóricos</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="border-l-4 border-primary pl-4">
+                        <h4 class="font-semibold text-gray-800">Ecosofía</h4>
+                        <p class="text-gray-600 text-sm">Guattari (2000): Integración de lo ambiental, social y subjetivo</p>
+                    </div>
+                    <div class="border-l-4 border-secondary pl-4">
+                        <h4 class="font-semibold text-gray-800">Pedagogía del Territorio</h4>
+                        <p class="text-gray-600 text-sm">Mejía (2020): Educación arraigada en contextos locales</p>
+                    </div>
+                    <div class="border-l-4 border-zenu pl-4">
+                        <h4 class="font-semibold text-gray-800">Interculturalidad</h4>
+                        <p class="text-gray-600 text-sm">Pérez (2016): Diálogo de saberes académicos y ancestrales</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-accent mb-4">Objetivos de la Práctica</h3>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1 flex-shrink-0">1</div>
+                        <p class="text-gray-700">Recuperar técnicas agrícolas Zenú mediante diálogo intergeneracional</p>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1 flex-shrink-0">2</div>
+                        <p class="text-gray-700">Crear archivo vivo audiovisual de saberes tradicionales</p>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1 flex-shrink-0">3</div>
+                        <p class="text-gray-700">Fortalecer identidad cultural mediante prácticas artísticas colectivas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Section -->
+        <section id="practica" class="mb-20">
+            <div class="flex items-center mb-8">
+                <div class="h-1 bg-secondary flex-grow"></div>
+                <h2 class="text-3xl font-bold text-center px-4 text-primary">2. Práctica Educativa Aplicada</h2>
+                <div class="h-1 bg-secondary flex-grow"></div>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-12">
+                <div class="md:flex">
+                    <div class="md:w-1/3 bg-primary text-white p-6">
+                        <h3 class="text-2xl font-bold mb-4">Semillas de Vida</h3>
+                        <p class="mb-4">Programa intercultural de reconexión cultural y ambiental</p>
+                        <div class="space-y-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-users mt-1 mr-3"></i>
+                                <p>Estudiantes 6°-11°, sabedores locales, familias</p>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-clock mt-1 mr-3"></i>
+                                <p>6 semanas - 2 sesiones semanales</p>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marked-alt mt-1 mr-3"></i>
+                                <p>San Jacinto Bolívar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 p-6">
+                        <h4 class="text-xl font-semibold text-accent mb-4">Metodología Ecosófica</h4>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h5 class="font-semibold text-gray-800 mb-2">Eje Cultural</h5>
+                                <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                                    <li>Círculos de palabra ancestral</li>
+                                    <li>Transmisión oral de saberes</li>
+                                    <li>Tejido de hamacas como práctica pedagógica</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold text-gray-800 mb-2">Eje Natural</h5>
+                                <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                                    <li>Huertas comunitarias escolares</li>
+                                    <li>Medicina natural con plantas locales</li>
+                                    <li>Arte con elementos naturales</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="text-xl font-semibold text-accent mb-4">Fases de Implementación</h3>
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-primary">
+                    <div class="text-primary text-2xl mb-3">1</div>
+                    <h4 class="font-semibold text-lg mb-2">Sentir el Territorio</h4>
+                    <p class="text-gray-600">Caminatas ecológicas y mapeo afectivo del barrio mediante experiencias sensoriales guiadas</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-secondary">
+                    <div class="text-secondary text-2xl mb-3">2</div>
+                    <h4 class="font-semibold text-lg mb-2">Escuchar para Recordar</h4>
+                    <p class="text-gray-600">Diálogos intergeneracionales con sabedores locales (tejedoras, curanderos, músicos)</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-zenu">
+                    <div class="text-zenu text-2xl mb-3">3</div>
+                    <h4 class="font-semibold text-lg mb-2">Expresar lo Aprendido</h4>
+                    <p class="text-gray-600">Creación artística colectiva (mural comunitario, canción, obra de teatro)</p>
+                </div>
+            </div>
+            
+            <h3 class="text-xl font-semibold text-accent mb-4">Actividades de Deconstrucción</h3>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white rounded-lg overflow-hidden">
+                    <thead class="bg-primary text-white">
+                        <tr>
+                            <th class="py-3 px-4 text-left">Categoría</th>
+                            <th class="py-3 px-4 text-left">Práctica Tradicional</th>
+                            <th class="py-3 px-4 text-left">Innovación Pedagógica</th>
+                            <th class="py-3 px-4 text-left">Vinculación Zenú</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="py-3 px-4 font-semibold">Cultural</td>
+                            <td class="py-3 px-4">Transmisión escrita</td>
+                            <td class="py-3 px-4">Círculos de palabra ancestral</td>
+                            <td class="py-3 px-4">Oralidad como memoria viva</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-3 px-4 font-semibold">Natural</td>
+                            <td class="py-3 px-4">Arte occidental</td>
+                            <td class="py-3 px-4">Naturaleza como lienzo</td>
+                            <td class="py-3 px-4">Conexión espiritual con la tierra</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 font-semibold">Económico</td>
+                            <td class="py-3 px-4">Emprendimiento neoliberal</td>
+                            <td class="py-3 px-4">Tejido de hamacas</td>
+                            <td class="py-3 px-4">Economía solidaria</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Evidence Section -->
+        <section id="evidencias" class="mb-20">
+            <div class="flex items-center mb-8">
+                <div class="h-1 bg-secondary flex-grow"></div>
+                <h2 class="text-3xl font-bold text-center px-4 text-primary">3. Evidencias de la Aplicación</h2>
+                <div class="h-1 bg-secondary flex-grow"></div>
+            </div>
+            
+            <div class="mb-12">
+                <h3 class="text-xl font-semibold text-accent mb-6">Galería Multimedia</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="h-48 bg-gray-200 flex items-center justify-center">
+                            <i class="fas fa-image text-4xl text-gray-400"></i>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-semibold mb-2">Taller de Tejido Zenú</h4>
+                            <p class="text-gray-600 text-sm">Sabedora enseñando técnicas tradicionales a estudiantes</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="h-48 bg-gray-200 flex items-center justify-center">
+                            <i class="fas fa-video text-4xl text-gray-400"></i>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-semibold mb-2">Círculo de la Palabra</h4>
+                            <p class="text-gray-600 text-sm">Adulto mayor compartiendo relatos ancestrales</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="h-48 bg-gray-200 flex items-center justify-center">
+                            <i class="fas fa-microphone text-4xl text-gray-400"></i>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-semibold mb-2">Podcast Comunitario</h4>
+                            <p class="text-gray-600 text-sm">Testimonios sobre medicina tradicional</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-12">
+                <h3 class="text-xl font-semibold text-accent mb-6">Testimonios Clave</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-secondary">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-gray-200 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                <i class="fas fa-user text-gray-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">María Fernanda, 15 años</h4>
+                                <p class="text-gray-600 text-sm">Estudiante participante</p>
+                            </div>
+                        </div>
+                        <p class="italic text-gray-700">"Nunca había hablado tanto con mi abuela hasta estos talleres. Ahora sé que las plantas de nuestro patio son medicina"</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-primary">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-gray-200 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                <i class="fas fa-user text-gray-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Don Jacinto, 72 años</h4>
+                                <p class="text-gray-600 text-sm">Sabedor local</p>
+                            </div>
+                        </div>
+                        <p class="italic text-gray-700">"Por fin los jóvenes preguntan cómo sembramos antes, sin químicos. Eso vale más que cualquier pago"</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold text-accent mb-6">Consentimientos Informados</h3>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center">
+                        <i class="fas fa-file-signature text-2xl text-primary mr-4"></i>
+                        <div>
+                            <h4 class="font-semibold">Proceso Ético Documentado</h4>
+                            <p class="text-gray-600">Todos los participantes firmaron consentimientos adaptados culturalmente, incluyendo:</p>
+                        </div>
+                    </div>
+                    <ul class="list-disc pl-10 mt-4 space-y-2 text-gray-700">
+                        <li>Versión en lenguaje sencillo para población rural</li>
+                        <li>Opción de firma simbólica para no alfabetizados</li>
+                        <li>Explicación audiovisual de derechos de participación</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dissemination Section -->
+        <section id="divulgacion" class="mb-20">
+            <div class="flex items-center mb-8">
+                <div class="h-1 bg-secondary flex-grow"></div>
+                <h2 class="text-3xl font-bold text-center px-4 text-primary">4. Formato de Divulgación</h2>
+                <div class="h-1 bg-secondary flex-grow"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div>
+                    <h3 class="text-xl font-semibold text-accent mb-4">Plataforma Digital Integral</h3>
+                    <p class="mb-6 text-gray-700">Sitio web responsive diseñado en Google Sites para garantizar acceso incluso con conexiones limitadas:</p>
+                    
+                    <div class="bg-gray-800 text-white p-6 rounded-lg mb-6">
+                        <h4 class="font-semibold text-lg mb-4">Contenidos Destacados</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-play-circle text-secondary mt-1 mr-3"></i>
+                                <span>Video documental "Semillas que Germinan" (15 min)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-headphones text-secondary mt-1 mr-3"></i>
+                                <span>Podcast serie "Voces del San Jacinto que Resiste"</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-download text-secondary mt-1 mr-3"></i>
+                                <span>Guías descargables para replicar la experiencia</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-qrcode text-secondary mt-1 mr-3"></i>
+                                <span>Acceso mediante QR en espacios comunitarios</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <a href="#" class="inline-flex items-center px-6 py-3 bg-primary text-white rounded-lg font-medium hover:bg-primary-dark transition">
+                        <i class="fas fa-external-link-alt mr-2"></i>
+                        Ver sitio de divulgación
+                    </a>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-lg border border-gray-200 flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="mx-auto bg-gray-200 w-full h-48 mb-4 flex items-center justify-center rounded">
+                            <i class="fas fa-laptop text-5xl text-gray-500"></i>
+                        </div>
+                        <h4 class="font-semibold mb-2">Preview del Sitio Web</h4>
+                        <p class="text-gray-600 text-sm">Diseño accesible y amigable para toda la comunidad</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="text-xl font-semibold text-accent mb-4">Estrategia de Apropiación Comunitaria</h3>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="bg-white p-4 rounded-lg shadow text-center">
+                    <div class="text-secondary text-3xl mb-3">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h4 class="font-semibold mb-2">Radios Comunitarias</h4>
+                    <p class="text-gray-600 text-sm">Cápsulas informativas en emisoras locales</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow text-center">
+                    <div class="text-primary text-3xl mb-3">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h4 class="font-semibold mb-2">Talleres Multiplicadores</h4>
+                    <p class="text-gray-600 text-sm">Formación de replicadores en veredas</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow text-center">
+                    <div class="text-zenu text-3xl mb-3">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h4 class="font-semibold mb-2">Feria Anual</h4>
+                    <p class="text-gray-600 text-sm">Exposición de resultados a la comunidad</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow text-center">
+                    <div class="text-secondary text-3xl mb-3">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h4 class="font-semibold mb-2">Cartilla Pedagógica</h4>
+                    <p class="text-gray-600 text-sm">Guía impresa para contextos sin internet</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Evaluation Section -->
+        <section id="evaluacion" class="mb-20">
+            <div class="flex items-center mb-8">
+                <div class="h-1 bg-secondary flex-grow"></div>
+                <h2 class="text-3xl font-bold text-center px-4 text-primary">5. Evaluación y Sostenibilidad</h2>
+                <div class="h-1 bg-secondary flex-grow"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div>
+                    <h3 class="text-xl font-semibold text-accent mb-4">Sistema de Evaluación Participativa</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Indicadores Cualitativos</h4>
+                            <ul class="list-disc pl-6 text-gray-700 space-y-1">
+                                <li>Cambio en narrativas juveniles sobre territorio (análisis de dibujos pre/post)</li>
+                                <li>Número de prácticas ancestrales recuperadas</li>
+                                <li>Percepción de conexión cultural (escala Likert)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Indicadores Cuantitativos</h4>
+                            <ul class="list-disc pl-6 text-gray-700 space-y-1">
+                                <li>85% de asistencia promedio a talleres</li>
+                                <li>12 sabedores locales involucrados</li>
+                                <li>3 huertas escolares establecidas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-accent mb-4">Cronograma</h3>
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <div class="overflow-x-auto">
+                            <table class="min-w-full">
+                                <thead class="bg-gray-100">
+                                    <tr>
+                                        <th class="py-2 px-3 text-left">Fase</th>
+                                        <th class="py-2 px-3 text-left">Mayo 2025</th>
+                                        <th class="py-2 px-3 text-left">Jun-Jul</th>
+                                        <th class="py-2 px-3 text-left">Agosto 2025</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-200">
+                                    <tr>
+                                        <td class="py-2 px-3">Diagnóstico</td>
+                                        <td class="py-2 px-3"><i class="fas fa-check text-primary"></i></td>
+                                        <td class="py-2 px-3"></td>
+                                        <td class="py-2 px-3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 px-3">Talleres</td>
+                                        <td class="py-2 px-3"></td>
+                                        <td class="py-2 px-3"><i class="fas fa-check text-primary"></i></td>
+                                        <td class="py-2 px-3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 px-3">Sistematización</td>
+                                        <td class="py-2 px-3"></td>
+                                        <td class="py-2 px-3"></td>
+                                        <td class="py-2 px-3"><i class="fas fa-check text-primary"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="text-sm text-gray-600 mt-3">* Sujeto a cambios por cualquier imprevisto</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="text-xl font-semibold text-accent mb-4">Plan de Sostenibilidad</h3>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-primary text-2xl mb-3">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h4 class="font-semibold text-lg mb-2">Alianzas Estratégicas</h4>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                        <li>Acuerdo con la Junta de Acción Comunal</li>
+                        <li>Vinculación al PEI de 3 escuelas</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-secondary text-2xl mb-3">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4 class="font-semibold text-lg mb-2">Formación de Multiplicadores</h4>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                        <li>8 jóvenes líderes capacitados</li>
+                        <li>Guías metodológicas locales</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-zenu text-2xl mb-3">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h4 class="font-semibold text-lg mb-2">Proyección a Largo Plazo</h4>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                        <li>Banco de semillas comunitario</li>
+                        <li>Ruta ecoturística pedagógica</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reflection Section -->
+        <section id="reflexion" class="mb-20">
+            <div class="flex items-center mb-8">
+                <div class="h-1 bg-secondary flex-grow"></div>
+                <h2 class="text-3xl font-bold text-center px-4 text-primary">6. Reflexión Final</h2>
+                <div class="h-1 bg-secondary flex-grow"></div>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-12">
+                <div class="md:flex">
+                    <div class="md:w-1/3 bg-zenu text-white p-6 flex items-center">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4">Aprendizajes Clave</h3>
+                            <p>Lo que San Jacinto nos enseñó</p>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 p-6">
+                        <div class="prose max-w-none">
+                            <p class="mb-4">Esta práctica nos reveló que la verdadera innovación pedagógica no está en la tecnología, sino en la capacidad de <strong>escuchar el latido del territorio</strong>. San Jacinto, con su resistencia cultural silenciosa, nos mostró caminos que los libros no enseñan:</p>
+                            
+                            <ul class="list-disc pl-6 mb-4 space-y-2">
+                                <li>La educación sostenible debe ser como la ceiba: <em>arraigada en lo local, flexible ante los cambios, y con ramas que acojan a todos</em>.</li>
+                                <li>Los saberes ancestrales no son "tradición" sino <strong>tecnología social probada</strong> durante siglos.</li>
+                                <li>La evaluación auténtica ocurre cuando los abuelos reconocen en sus nietos el respeto por la tierra.</li>
+                            </ul>
+                            
+                            <blockquote class="border-l-4 border-secondary pl-4 my-4 italic text-gray-700">
+                                "Aprendimos a descubrir el valor de caminar lento, mirar con el corazón y enseñar desde el sentir. Nos reconectamos con la naturaleza como maestra, con la comunidad como raíz y con la educación como un acto vivo de transformación"
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="text-xl font-semibold text-accent mb-6">Recomendaciones</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="font-semibold text-lg mb-3 text-primary">Para la Comunidad Educativa</h4>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                        <li>Institucionalizar los círculos de palabra como práctica pedagógica mensual</li>
+                        <li>Crear un consejo intergeneracional de saberes locales</li>
+                        <li>Documentar procesos en formatos accesibles (audiovisual, pictográfico)</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="font-semibold text-lg mb-3 text-secondary">Para Políticas Públicas</h4>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                        <li>Reconocer horas curriculares para sabedores tradicionales</li>
+                        <li>Incluir indicadores culturales en evaluaciones institucionales</li>
+                        <li>Fondos concursables para prácticas pedagógicas ecosóficas</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+                   <!-- References Section -->
+            <section class="mb-20">
+                <div class="flex items-center mb-8">
+                    <div class="h-1 bg-secondary flex-grow"></div>
+                    <h2 class="text-3xl font-bold text-center px-4 text-primary">7. Referencias</h2>
+                    <div class="h-1 bg-secondary flex-grow"></div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-xl font-semibold text-accent mb-4">Bibliográficas</h3>
+                            <ul class="space-y-3 text-gray-700">
+                                <li class="flex items-start">
+                                    <span class="text-primary mr-2">•</span>
+                                    <span>Guattari, F. (2000). <em>Las tres ecologías</em>. Pre-Textos.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-primary mr-2">•</span>
+                                    <span>Mejía, M. (2020). <em>Educación(es) en la(s) globalización(es)</em>. Desde Abajo.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-primary mr-2">•</span>
+                                    <span>Pérez, M. (2016). <em>La Educación Intercultural</em>. Recuperado de https://www.redalyc.org</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-accent mb-4">Locales</h3>
+                            <ul class="space-y-3 text-gray-700">
+                                <li class="flex items-start">
+                                    <span class="text-primary mr-2">•</span>
+                                    <span>Plan de Desarrollo San Jacinto 2025-2027</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-primary mr-2">•</span>
+                                    <span>Radio Nacional (2021). <em>San Jacinto, pueblo de la gaita y las artesanías</em></span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-primary mr-2">•</span>
+                                    <span>Encuesta Comunitaria (2025). Datos no publicados</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="text-xl font-semibold text-accent mb-4">Recursos Complementarios</h3>
+                        <div class="grid md:grid-cols-3 gap-4">
+                            <a href="#" class="flex items-center text-accent hover:text-primary">
+                                <i class="fas fa-file-pdf mr-2"></i>
+                                <span>Cartilla Pedagógica</span>
+                            </a>
+                            <a href="#" class="flex items-center text-accent hover:text-primary">
+                                <i class="fas fa-video mr-2"></i>
+                                <span>Documental completo</span>
+                            </a>
+                            <a href="#" class="flex items-center text-accent hover:text-primary">
+                                <i class="fas fa-database mr-2"></i>
+                                <span>Archivo de saberes</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team Section -->
+          <section class="mb-20">
+    <div class="flex items-center mb-8">
+        <div class="h-1 bg-secondary flex-grow"></div>
+        <h2 class="text-3xl font-bold text-center px-4 text-primary">Equipo Responsable</h2>
+        <div class="h-1 bg-secondary flex-grow"></div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+        <!-- Estiben Capdevilla -->
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+            <div class="bg-gray-200 rounded-full w-24 h-24 mx-auto mb-4 overflow-hidden">
+                <img src="https://drive.google.com/thumbnail?id=1Bq6klfJbPM_2cy3zTP7p3JmLoImeztlh" 
+                     alt="Foto de Estiben Capdevilla"
+                     class="w-full h-full object-cover">
+            </div>
+            <h3 class="text-xl font-semibold mb-1">Estiben Capdevilla</h3>
+            <p class="text-gray-600 mb-3">Grupo 34</p>
+            <div class="flex justify-center space-x-3">
+                <a href="#" class="text-primary hover:text-secondary">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="text-primary hover:text-secondary">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Jessica Gómez -->
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+            <div class="bg-gray-200 rounded-full w-24 h-24 mx-auto mb-4 overflow-hidden">
+                <img src="https://drive.google.com/thumbnail?id=1f-t7XmVAggoUS_5_QqLWOBnihrOtVhJc" 
+                     alt="Foto de Jessica Gómez"
+                     class="w-full h-full object-cover">
+            </div>
+            <h3 class="text-xl font-semibold mb-1">Jessica Gómez</h3>
+            <p class="text-gray-600 mb-3">Grupo 33</p>
+            <div class="flex justify-center space-x-3">
+                <a href="#" class="text-primary hover:text-secondary">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="text-primary hover:text-secondary">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- María Morón -->
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+            <div class="bg-gray-200 rounded-full w-24 h-24 mx-auto mb-4 overflow-hidden">
+                <img src="https://drive.google.com/thumbnail?id=1lJHJKb6nlkTqfm0gxnjWYeeqiGbgI11M" 
+                     alt="Foto de María Morón"
+                     class="w-full h-full object-cover">
+            </div>
+            <h3 class="text-xl font-semibold mb-1">María Morón</h3>
+            <p class="text-gray-600 mb-3">Grupo 34</p>
+            <div class="flex justify-center space-x-3">
+                <a href="#" class="text-primary hover:text-secondary">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="text-primary hover:text-secondary">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-primary text-white py-12">
+            <div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Semillas de Vida</h3>
+                        <p class="text-primary-200">Programa educativo intercultural para la reconexión cultural y ambiental en San Jacinto Bolívar</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-4">Enlaces Rápidos</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#contexto" class="hover:text-secondary">Contexto</a></li>
+                            <li><a href="#practica" class="hover:text-secondary">Práctica Educativa</a></li>
+                            <li><a href="#evidencias" class="hover:text-secondary">Evidencias</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-4">Contacto</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-map-marker-alt mt-1 mr-2"></i>
+                                <span>San Jacinto Bolívar, Colombia</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-envelope mt-1 mr-2"></i>
+                                <span>semillasdevida@edu.co</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-4">Síguenos</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-2xl hover:text-secondary">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="text-2xl hover:text-secondary">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="text-2xl hover:text-secondary">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                        <div class="mt-6">
+                            <img src="https://via.placeholder.com/120x60" alt="QR Code" class="h-20 mx-auto">
+                            <p class="text-xs text-center mt-2 text-primary-200">Escanea para visitar nuestro sitio</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-t border-primary-300 mt-8 pt-8 text-center text-primary-200 text-sm">
+                    <p>© 2025 Semillas de Vida. Todos los derechos reservados.</p>
+                    <p class="mt-2">Maestría en Educación para la Innovación Pedagógica - Seminario III</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Back to Top Button -->
+        <button id="backToTop" class="fixed bottom-6 right-6 bg-secondary text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg hidden">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <script>
+            // Back to top button
+            const backToTopButton = document.getElementById('backToTop');
+            
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.classList.remove('hidden');
+                } else {
+                    backToTopButton.classList.add('hidden');
+                }
+            });
+            
+            backToTopButton.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>
